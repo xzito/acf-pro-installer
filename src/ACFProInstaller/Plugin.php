@@ -244,7 +244,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
     {
         $ops_rel_path = DIRECTORY_SEPARATOR.'ops';
 
-        if (file_exists(getcwd().$ops_rel_path.'.env')) {
+        if (file_exists(getcwd().$ops_rel_path.'.env_app')) {
             $dotenv = new Dotenv(getcwd().$ops_rel_path);
             $dotenv->load();
         }
