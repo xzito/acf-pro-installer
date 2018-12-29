@@ -242,8 +242,10 @@ class Plugin implements PluginInterface, EventSubscriberInterface
      */
     protected function loadDotEnv()
     {
-        if (file_exists(getcwd().DIRECTORY_SEPARATOR.'.env')) {
-            $dotenv = new Dotenv(getcwd());
+        $ops_rel_path = DIRECTORY_SEPARATOR.'ops';
+
+        if (file_exists(getcwd().$ops_rel_path.'.env')) {
+            $dotenv = new Dotenv(getcwd().$ops_rel_path);
             $dotenv->load();
         }
     }
