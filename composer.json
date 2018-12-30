@@ -1,5 +1,5 @@
 {
-  "name": "philippbaschke/acf-pro-installer",
+  "name": "xzito/acf-pro-installer",
   "description": "An install helper for Advanced Custom Fields PRO",
   "type": "composer-plugin",
   "license": "MIT",
